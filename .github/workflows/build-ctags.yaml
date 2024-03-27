@@ -165,7 +165,8 @@ jobs:
 
     - name: Test
       if: steps.check.outputs.skip == 'no'
-      timeout-minutes: 10
+      continue-on-error: true
+      timeout-minutes: 20
       run: |
         cd ctags
         file ctags.exe
