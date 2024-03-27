@@ -160,7 +160,7 @@ jobs:
       run: |
         cd ctags
         ./autogen.sh
-        ./configure --disable-external-sort --enable-static
+        ./configure --disable-external-sort --enable-static --enable-json
         make -j2
 
     - name: Test
