@@ -22,7 +22,7 @@ permissions:
   contents: read
 
 env:
-  CTAGSREPO: https://github.com/universal-ctags/ctags
+  CTAGSREPO: https://github.com/jaczemann/universal-ctags
 
   # Account for committing
   USER_NAME: 'ctags-win32 CI'
@@ -39,7 +39,7 @@ jobs:
     runs-on: windows-latest
 
     # Run only on PR or on our repository.
-    if: (github.event_name == 'pull_request') || (github.repository == 'universal-ctags/ctags-win32')
+    if: (github.event_name == 'pull_request') || (github.repository == 'jaczemann/ctags-win32')
 
     strategy:
       fail-fast: false
